@@ -36,6 +36,20 @@ Additionally, LLMs can readily interpret our structured ARDs to assist medical w
 
 - [ ] Bring your laptop **and** charger to the workshop.
 
+## Slides
+
+[View **ARD** slides in full screen](/slides/01-ARD/index.html)
+
+```{=html}
+<iframe class="slide-deck" src="/slides/01-ARD/" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+```
+
+
+[View **gtsummary** slides in full screen](/slides/02-tables-gtsummary/index.html)
+
+```{=html}
+<iframe class="slide-deck" src="/slides/02-tables-gtsummary/" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+```
 
 ## Instructor
 
