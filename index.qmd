@@ -1,0 +1,64 @@
+---
+title: "ARDs + AI: Building the Future of Clinical Reporting with {gtsummary} and {cards}"
+subtitle: "Workshop@[BBSW 2025](https://www.bbsw.org/program)"
+engine: knitr
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+------------------------------------------------------------------------
+
+🗓️ November 6, 2025 11:00AM - 12:30PM
+
+🏨 Crowne Plaza Hotel, Foster City, CA
+
+📝 [Workshop Registration](https://www.ticketleap.events/tickets/bbsw-tickets/bbsw-2025)
+
+------------------------------------------------------------------------
+
+## Description
+
+As the pharmaceutical field moves to open-source solutions for reporting on clinical trials, assessing and vetting the options available becomes increasingly important.
+The {gtsummary} R package is the most widely used tool in the R ecosystem for creating publication-ready summary tables.
+Its recent integration with the Analysis Results Dataset (ARD) framework represents a major advance for clinical trial reporting.
+ARDs, which standardize statistical outputs in a machine-readable format, can be robustly generated using the open-source {cards} package developed by Roche\Genentech, GSK, Novartis, Eli Lilly, Pfizer, and Clymb.
+
+In this seminar, attendees will learn about ARDs and how can fit into the larger CDISC-proposed Analysis Results Standard, get hands-on experience using {cards} to build ARDs for both simple and complex statistical summaries, create summary tables using the {gtsummary} package, and learn how utilizing these packages together also makes programmatic quality control of TLGs a simple task.
+
+Lastly, we will review how this ecosystem naturally lends itself to Large Language Models (LLMs).
+Because {gtsummary} is so widely adopted, LLMs can generate complex {gtsummary} code without additional training.
+Additionally, LLMs can readily interpret our structured ARDs to assist medical writers summarizing both simple and sophisticated trial results.
+
+## Pre-work
+
+- [ ] Bookmark this site. You'll reference it throughout the workshop.  <!-- [pos.it/pharmaverse_24](https://posit-conf-2024.github.io/pharmaverse/) -->
+
+- [ ] Bring your laptop **and** charger to the workshop.
+
+
+## Instructor
+
+![](images/dan-circle.png){style="float:left;padding: 0 10px 0 0;" fig-alt="Headshot of Daniel Sjoberg" width="150"}
+
+[**Daniel D. Sjoberg**](https://www.danieldsjoberg.com/) (he/him) is a
+Senior Principal Data Scientist at Genentech. Previously, he was a Lead
+Data Science Manager at the Prostate Cancer Clinical Trials Consortium,
+and a Senior Biostatistician at Memorial Sloan Kettering Cancer Center
+in New York City. He enjoys R package development, creating many
+packages available on [CRAN](https://cran.r-project.org/web/packages/),
+[R-Universe](https://ddsjoberg.r-universe.dev/ui#packages), and
+[GitHub](https://github.com/ddsjoberg). He's a co-organizer of 
+[rainbowR](https://rainbowr.netlify.app/) (a community that supports, promotes 
+and connects LGBTQ+ people who code in the R language) and of the [R Medicine Conference](https://rconsortium.github.io/RMedicine_website/). 
+His research interests include
+adaptive methods in clinical trials, precision medicine, and predictive
+modeling. Daniel is the winner of the 2021 American Statistical
+Association (ASA) Innovation in Statistical Programming and Analytics
+award.
+
+[`r fontawesome::fa("link", fill = "#606060")`](https://www.danieldsjoberg.com/)
+[`r fontawesome::fa("bluesky", fill = "#606060")`](https://bsky.app/profile/ddsjoberg.bsky.social)
+[`r fontawesome::fa("linkedin", fill = "#606060")`](https://www.linkedin.com/in/ddsjoberg/)
+[`r fontawesome::fa("github", fill = "#606060")`](https://github.com/ddsjoberg/)
+
