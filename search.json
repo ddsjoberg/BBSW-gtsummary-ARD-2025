@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "license.html",
+    "href": "license.html",
+    "title": "License",
+    "section": "",
+    "text": "This work is licensed under a Creative Commons Attribution 4.0 International License.",
+    "crumbs": [
+      "License"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ARDs + AI: Building the Future of Clinical Reporting with {gtsummary} and {cards}",
+    "section": "",
+    "text": "🗓️ November 6, 2025 11:00AM - 12:30PM\n🏨 Crowne Plaza Hotel, Foster City, CA\n📝 Workshop Registration",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#description",
+    "href": "index.html#description",
+    "title": "ARDs + AI: Building the Future of Clinical Reporting with {gtsummary} and {cards}",
+    "section": "Description",
+    "text": "Description\nAs the pharmaceutical field moves to open-source solutions for reporting on clinical trials, assessing and vetting the options available becomes increasingly important. The {gtsummary} R package is the most widely used tool in the R ecosystem for creating publication-ready summary tables. Its recent integration with the Analysis Results Dataset (ARD) framework represents a major advance for clinical trial reporting. ARDs, which standardize statistical outputs in a machine-readable format, can be robustly generated using the open-source {cards} package developed by Roche, GSK, Novartis, Eli Lilly, Pfizer, and Clymb.\nIn this seminar, attendees will learn about ARDs and how can fit into the larger CDISC-proposed Analysis Results Standard, get hands-on experience using {cards} to build ARDs for both simple and complex statistical summaries, create summary tables using the {gtsummary} package, and learn how utilizing these packages together also makes programmatic quality control of TLGs a simple task.\nLastly, we will review how this ecosystem naturally lends itself to Large Language Models (LLMs). Because {gtsummary} is so widely adopted, LLMs can generate complex {gtsummary} code without additional training. Additionally, LLMs can readily interpret our structured ARDs to assist medical writers summarizing both simple and sophisticated trial results.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#pre-work",
+    "href": "index.html#pre-work",
+    "title": "ARDs + AI: Building the Future of Clinical Reporting with {gtsummary} and {cards}",
+    "section": "Pre-work",
+    "text": "Pre-work\n\nBookmark this site. You’ll reference it throughout the workshop. \nBring your laptop and charger to the workshop.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#instructor",
+    "href": "index.html#instructor",
+    "title": "ARDs + AI: Building the Future of Clinical Reporting with {gtsummary} and {cards}",
+    "section": "Instructor",
+    "text": "Instructor\n\nDaniel D. Sjoberg (he/him) is a Senior Principal Data Scientist at Genentech. Previously, he was a Lead Data Science Manager at the Prostate Cancer Clinical Trials Consortium, and a Senior Biostatistician at Memorial Sloan Kettering Cancer Center in New York City. He enjoys R package development, creating many packages available on CRAN, R-Universe, and GitHub. He’s a co-organizer of rainbowR (a community that supports, promotes and connects LGBTQ+ people who code in the R language) and of the R Medicine Conference. His research interests include adaptive methods in clinical trials, precision medicine, and predictive modeling. Daniel is the winner of the 2021 American Statistical Association (ASA) Innovation in Statistical Programming and Analytics award.",
+    "crumbs": [
+      "Home"
+    ]
+  }
+]
