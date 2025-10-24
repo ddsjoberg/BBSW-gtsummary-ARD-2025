@@ -1,3 +1,67 @@
+# ARDs
+
+
+## Where are the ARDs?
+
+::: {.columns .v-center-container}
+::: {.column width="30%"}
+
+- ARDs are the backbone for all calculations in gtsummary
+
+- Every gtsummary table saves the ARDs from each calculation
+
+:::
+
+::: {.column width="70%"}
+
+```{r}
+#| label: 'summary-view-ard'
+#| message: true
+#| code-line-numbers: "2"
+tbl <- tbl_summary(adsl, by = "ARM2", include = "AGE")
+gather_ard(tbl)
+```
+
+:::
+:::
+
+
+## ARD + QC
+
+ARDs are **wonderful** for QCing {gtsummary} tables. 😻
+
+- ARDs include the formatted and un-formatted numbers that appear in the table.
+
+- Extract the ARD from the {gtsummary} table.
+
+- Build fresh ARD from source data, and compare it to the ARD from the table.
+
+## ARD + QC: Build and Compare ARDs
+
+```{r}
+#| label: build-ae-tbl-ard
+ard_demog <- adsl |> 
+  cards::ard_stack(
+    cards::ard_summary(
+      variables = "AGE",
+      statistic = 
+        AGE ~ cards::continuous_summary_fns(c("median", "p25", "p75"))
+    ),
+    .by = "ARM2", 
+  )
+```
+
+The next step is to simply compare the two ARDs to confirm results.
+As this is done programmatically, it is quick to repeat as data continues to accrue.
+
+::: {.small}
+
+There are numerous ways to compare objects in R.
+We are currently developing a tool in {cards} that will streamline ARD comparison, with sensible defaults for ARDs.
+Stay tuned! 📺
+:::
+
+
 # ARD-first tables
 
 ## ARD-first Tables
@@ -74,38 +138,6 @@ We can simply use the ARD from the previous slide, and pass it to `tbl_ard_summa
 tbl_ard_summary(ard)
 ```
 
-
-## ARD-first Tables
-
-Now let's try a somewhat more complicated table.
-
-```{r}
-#| label: 'tbl_ard_summary2'
-#| output-location: "slide"
-#| code-line-numbers: "|2|4|7|17|18|19|21"
-adsl |> 
-  labelled::set_variable_labels(AGE = "Age, years") |> 
-  ard_stack( 
-    .by = ARM,
-    ard_continuous(
-      variables = AGE,
-      fmt_fn = AGE ~ list(sd = 2)
-    ),
-    ard_categorical(variables = ETHNIC),
-    ard_dichotomous(variables = FEMALE),
-    # add these for best-looking tables
-    .attributes = TRUE, 
-    .missing = TRUE 
-  ) |> 
-  tbl_ard_summary(
-    by = ARM,
-    type = all_continuous() ~ "continuous2",
-    statistic = all_continuous() ~ c("{mean} ({sd})", "{min} - {max}"),
-    missing = "no"
-  ) |> 
-  modify_caption("**Table 1. Subject Demographics**")
-```
-
 ## ARD-first Table *Shells*
 
 ```{r}
@@ -115,15 +147,15 @@ adsl |>
 adsl |> 
   labelled::set_variable_labels(AGE = "Age, years") |> 
   ard_stack( 
-    .by = ARM,
-    ard_categorical(variables = ETHNIC),
+    .by = ARM2,
+    ard_tabulate(variables = ETHNIC),
     # add these for best-looking tables
     .attributes = TRUE, 
     .missing = TRUE 
   ) |> 
   cards::update_ard_fmt_fun(stat_names = c("n", "p"), fmt_fun = \(x) "xx") |> 
   tbl_ard_summary(
-    by = ARM,
+    by = ARM2,
     type = all_continuous() ~ "continuous2",
     statistic = all_continuous() ~ c("{mean} ({sd})", "{min} - {max}"),
     missing = "no"
