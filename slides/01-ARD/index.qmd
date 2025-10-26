@@ -1,5 +1,5 @@
 ---
-title: "ARDs (Analysis Results Datasets) in R"
+title: "Analysis Results Datasets (ARDs) in R"
 author: "Daniel D. Sjoberg"
 logo: "images/cards-cardx-hex.png"
 footer: "[https://www.danieldsjoberg.com/BBSW-gtsummary-ARD-2025/](https://www.danieldsjoberg.com/BBSW-gtsummary-ARD-2025/)"
