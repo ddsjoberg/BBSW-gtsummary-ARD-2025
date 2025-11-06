@@ -399,6 +399,13 @@
     "text": "{gtsummary} + LLMs \n\nSince {gtsummary} is widely adopted, our LLMs besties work wonderfully out of the box. No additional training needed!\nThe {gtsummary} site has recently added an AI assistant and it’s AMAZING! (Thank you kapa.ai)\nLet’s take a look https://www.danieldsjoberg.com/gtsummary/dev/"
   },
   {
+    "objectID": "slides/02-tables-gtsummary/index.html#future-work-gtsummary-llms",
+    "href": "slides/02-tables-gtsummary/index.html#future-work-gtsummary-llms",
+    "title": "Clinical Reporting with {gtsummary}",
+    "section": "Future Work: {gtsummary} + LLMs ",
+    "text": "Future Work: {gtsummary} + LLMs \nWe have begun looking into other ways AI can assist within this framework:\nPrimarily looking in how to use AI+ARDs to perform consistency checks across a set of TLGS (e.g. your entire CSR).\nBecause the ARDs have a consistent format that is entirely unrelated to the layout of the table or figure, the ARD can easily be used make these consistency checks.\n\n\nStill working out how/where to incorporate information about data filters."
+  },
+  {
     "objectID": "slides/02-tables-gtsummary/index.html#gtsummary-website",
     "href": "slides/02-tables-gtsummary/index.html#gtsummary-website",
     "title": "Clinical Reporting with {gtsummary}",
