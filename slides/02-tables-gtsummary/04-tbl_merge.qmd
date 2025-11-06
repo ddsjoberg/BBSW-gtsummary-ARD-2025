@@ -76,7 +76,7 @@ list(tbl_drug_a, tbl_drug_b) |>
 
     - A data frame
     
-    - Instructions to print that data frame to make it cute.
+    - Instructions to print that data frame to make it cute. 💅
 
 - Modify the underlying data frame directly with `modify_table_body()`.
 

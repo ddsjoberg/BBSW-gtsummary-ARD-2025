@@ -14,14 +14,3 @@ fa_fill <- "#606060"
 
 
 
-## Questions
-
-::: {.columns .v-center-container}
-::: {.column width="50%"}
-`r fontawesome::fa("circle-question", fill = fa_fill)` Please ask questions at any time!
-:::
-::: {.column width="50%"}
-![](images/questions.jpg){width=100%}
-:::
-:::
-

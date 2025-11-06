@@ -22,6 +22,10 @@ adae <- pharmaverseadam::adae |>
   ) |> 
   mutate(ARM2 = word(ARM))
 
+adtte <- pharmaverseadam::adtte_onco |> 
+  dplyr::filter(PARAM == "Progression Free Survival") |> 
+  mutate(ARM2 = word(ARM))
+
 adlb <- pharmaverseadam::adlb |> 
   filter(
     USUBJID %in% adsl$USUBJID, 

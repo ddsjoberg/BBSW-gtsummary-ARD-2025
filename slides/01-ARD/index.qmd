@@ -20,7 +20,22 @@ cache: false
 ```{r}
 #| echo: false
 options(width = 200)
+# fill for font awesome icons
+fa_fill <- "#606060"
 ```
+
+## Questions
+
+::: {.columns .v-center-container}
+::: {.column width="50%"}
+`r fontawesome::fa("circle-question", fill = fa_fill)` Please ask questions at any time!
+:::
+::: {.column width="50%"}
+![](images/questions.jpg){width=100%}
+:::
+:::
+
+
 
 {{< include intro_to_ards.qmd >}}
 

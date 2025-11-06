@@ -32,8 +32,6 @@
   
         -   You don’t have to waste time trying to match formatting to match QC
     
-        -   But...QC will be more sensitive to floating point
-    
 -   ARDs can be flexibly saved to different file types
 
     -   For example: a dataset (rds, xpt, etc) or json file

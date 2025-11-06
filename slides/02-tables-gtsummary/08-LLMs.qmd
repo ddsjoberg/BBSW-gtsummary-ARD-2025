@@ -129,7 +129,7 @@ dplyr::filter(pharmaverseadam::adsl, SAFFL == "Y") |>
   ) |> 
   gather_ard() |> 
   purrr::pluck("tbl_summary") |> 
-  apply_fmt_fun() |> 
+  cards::apply_fmt_fun() |> 
   cards::as_nested_list() |> 
   jsonlite::toJSON(pretty = TRUE)
 ```
@@ -153,3 +153,14 @@ Overall, the demographic characteristics at baseline appear well-balanced across
 :::
 ::::
 :::::
+
+## {gtsummary} + LLMs <img src="images/gtsummary-logo.png" align="right" height="120"/>
+
+- Since {gtsummary} is widely adopted, our LLMs besties work wonderfully out of the box. No additional training needed!
+    
+- The {gtsummary} site has recently added an AI assistant and it's AMAZING! (Thank you `kapa.ai`)
+
+- Let's take a look [https://www.danieldsjoberg.com/gtsummary/dev/](https://www.danieldsjoberg.com/gtsummary/dev/)
+    
+<img src="images/gtsummary-kapa.png" align="center" height="250"/>
+

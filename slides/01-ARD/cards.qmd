@@ -6,7 +6,7 @@
 
 -   Part of the Pharmaverse
 
--   Collaboration between Roche, GSK, Novartis, Eli Lilly, Pfizer
+-   Collaboration between Roche, GSK, Novartis, Eli Lilly, Pfizer, and Clymb Clinical
 
 -   Contains a variety of utilities for making ARDs
 
