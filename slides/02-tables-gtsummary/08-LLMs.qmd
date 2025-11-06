@@ -4,8 +4,8 @@
 
 -   {gtsummary} is a widely used package, the publicly available LLMs write code out of the box: no additional training needed.
 
-> Act as a statistical programmer within the pharmaceutical industry, and provide me code to create tables in the R language using the gtsummary package.  
-Using the ADSL data set as an input, please provide the code for creating a demographics table that is split by treatment arm. Include the variables AGE and AGEGR1. AGE is a continuous summary, and include the mean, standard deviation, median and IQR. AGEGR1 is a categorical variable and include the count and percent in the summary.
+> Act as a statistical programmer within the pharmaceutical industry, and provide me code to create tables in the R language using the gtsummary package.\
+> Using the ADSL data set as an input, please provide the code for creating a demographics table that is split by treatment arm. Include the variables AGE and AGEGR1. AGE is a continuous summary, and include the mean, standard deviation, median and IQR. AGEGR1 is a categorical variable and include the count and percent in the summary.
 
 ## How can LLMs help us within the ARD framework?
 
@@ -156,11 +156,32 @@ Overall, the demographic characteristics at baseline appear well-balanced across
 
 ## {gtsummary} + LLMs <img src="images/gtsummary-logo.png" align="right" height="120"/>
 
-- Since {gtsummary} is widely adopted, our LLMs besties work wonderfully out of the box. No additional training needed!
-    
-- The {gtsummary} site has recently added an AI assistant and it's AMAZING! (Thank you `kapa.ai`)
+-   Since {gtsummary} is widely adopted, our LLMs besties work wonderfully out of the box. No additional training needed!
 
-- Let's take a look [https://www.danieldsjoberg.com/gtsummary/dev/](https://www.danieldsjoberg.com/gtsummary/dev/)
-    
+-   The {gtsummary} site has recently added an AI assistant and it's AMAZING! (Thank you `kapa.ai`)
+
+-   Let's take a look <https://www.danieldsjoberg.com/gtsummary/dev/>
+
 <img src="images/gtsummary-kapa.png" align="center" height="250"/>
 
+## Future Work: {gtsummary} + LLMs <img src="images/gtsummary-logo.png" align="right" height="120"/>
+
+We have begun looking into other ways AI can assist within this framework:
+
+Primarily looking in how to use AI+ARDs to perform consistency checks across a set of TLGS (e.g. your entire CSR).
+
+Because the ARDs have a consistent format that is *entirely unrelated* to the layout of the table or figure, the ARD can easily be used make these consistency checks.
+
+:::::::: columns
+:::::: {.column width="60%"}
+
+*Still working out how/where to incorporate information about data filters.*
+
+:::::: 
+:::::: {.column width="40%"}
+
+<img src="images/confused-robot.png" align="right" height="300"/>
+
+:::::: 
+
+:::::::: 
