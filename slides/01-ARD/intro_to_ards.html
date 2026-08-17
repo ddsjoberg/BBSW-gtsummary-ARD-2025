@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>intro_to_ards – ARDs + AI: Building the Future of Clinical Reporting with {gtsummary} and {cards}</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -32,15 +38,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../images/cards-cardx-gtsummary-hex.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bb1cd4028f63a369ab283e072cb7d572.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-3419ea62b3ca2d77d3d547f86109e84e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-1a6a768279120f5e1a42d5af78f67e8b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-78f4b7fde2e541ac3eebc3eab9ce3b51.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -144,6 +149,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#zooming-out-the-analysis-results-standard-ars" id="toc-zooming-out-the-analysis-results-standard-ars" class="nav-link" data-scroll-target="#zooming-out-the-analysis-results-standard-ars">Zooming Out: The Analysis Results Standard (ARS)</a></li>
   <li><a href="#proposed-metadata-framework-in-the-ars" id="toc-proposed-metadata-framework-in-the-ars" class="nav-link" data-scroll-target="#proposed-metadata-framework-in-the-ars">Proposed Metadata Framework in the ARS</a></li>
   <li><a href="#proposed-metadata-framework-in-the-ars-1" id="toc-proposed-metadata-framework-in-the-ars-1" class="nav-link" data-scroll-target="#proposed-metadata-framework-in-the-ars-1">Proposed Metadata Framework in the ARS</a></li>
+  <li><a href="#proposed-metadata-framework-in-the-ars-2" id="toc-proposed-metadata-framework-in-the-ars-2" class="nav-link" data-scroll-target="#proposed-metadata-framework-in-the-ars-2">Proposed Metadata Framework in the ARS</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ddsjoberg/BBSW-gtsummary-ARD-2025/edit/main/slides/01-ARD/intro_to_ards.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/ddsjoberg/BBSW-gtsummary-ARD-2025/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -214,6 +220,14 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="proposed-metadata-framework-in-the-ars">Proposed Metadata Framework in the ARS</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
+<p><img src="images/ARS-model-cmap.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="proposed-metadata-framework-in-the-ars-1" class="level2">
+<h2 class="anchored" data-anchor-id="proposed-metadata-framework-in-the-ars-1">Proposed Metadata Framework in the ARS</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
 <p><img src="images/ars-example-flow.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
@@ -221,8 +235,8 @@ ul.task-list li input[type="checkbox"] {
 <li>The ARS provides a metadata-driven infrastructure for analysis</li>
 </ul>
 </section>
-<section id="proposed-metadata-framework-in-the-ars-1" class="level2">
-<h2 class="anchored" data-anchor-id="proposed-metadata-framework-in-the-ars-1">Proposed Metadata Framework in the ARS</h2>
+<section id="proposed-metadata-framework-in-the-ars-2" class="level2">
+<h2 class="anchored" data-anchor-id="proposed-metadata-framework-in-the-ars-2">Proposed Metadata Framework in the ARS</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/ars-example-flow-with-hex.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
