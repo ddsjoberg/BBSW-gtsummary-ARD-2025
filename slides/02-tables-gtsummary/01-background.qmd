@@ -51,7 +51,7 @@ pkgs_all <-
 pkgs_pharmaverse <- c("gtsummary", "rtables", "tfrmt", "tidytlg", "Tplyr")
 
 df_30day <- 
-  cranlogs::cran_downloads(packages = pkgs_all, from = "2025-08-15", to = "2025-09-15") |> 
+  cranlogs::cran_downloads(packages = pkgs_all, from = "2026-06-15", to = "2026-07-15") |> 
   dplyr::summarise(.by = package, count = sum(count)) |> 
   dplyr::arrange(-count) |> 
   dplyr::mutate(
