@@ -52,6 +52,10 @@ Objectives include:
 
 ## Proposed Metadata Framework in the ARS
 
+![](images/ARS-model-cmap.png){fig-align="center"}
+
+## Proposed Metadata Framework in the ARS
+
 ![](images/ars-example-flow.png){fig-align="center"}
 
 - The ARS provides a metadata-driven infrastructure for analysis
